@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Decorum (Web)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="setup-screen" class="screen">
+        <header class="header">
+          <div class="logo">🏠 <span>DECORUM</span></div>
+          <div class="subtitle">A Cooperative Decorating Experience</div>
+        </header>
+        <div class="setup-content">
+          <div class="card">
+            <h2>Players</h2>
+            <div class="field-row">
+              <label>🔴 Player 1</label>
+              <input id="p1-name" type="text" value="Alice" />
+            </div>
+            <div class="field-row">
+              <label>🔵 Player 2</label>
+              <input id="p2-name" type="text" value="Bob" />
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Game Mode</h2>
+            <div class="button-row">
+              <button id="btn-random" class="btn primary">🎲 Random Conditions</button>
+              <button id="btn-custom" class="btn lavender">📝 Guided Custom Setup</button>
+              <button id="btn-file" class="btn peach">📁 Load Scenario</button>
+            </div>
+          </div>
+
+          <div class="hint">
+            <h3>💡 How to Play</h3>
+            <p>Each player has secret conditions. Take 1 action per turn, then your partner reacts.</p>
+            <p>No hard turn limit. You still have 3 Heart-to-Hearts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="game-screen" class="screen hidden">
+        <header class="header game-header">
+          <div class="logo">🏠 <span>DECORUM</span></div>
+          <div id="round-info" class="round-info"></div>
+          <div id="heart-info" class="heart-info"></div>
+          <div id="turn-indicator" class="turn-indicator"></div>
+        </header>
+
+        <main class="main">
+          <section id="house-panel" class="panel house-panel">
+            <div class="panel-header">
+              <h2>🏡 The House</h2>
+              <div id="selection-info" class="selection-info">Click a room to select it</div>
+            </div>
+            <div id="house-grid" class="house-grid"></div>
+          </section>
+
+          <aside id="control-panel" class="panel control-panel"></aside>
+        </main>
+      </div>
+    </div>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content"></div>
+    </div>
+    <input id="scenario-file" type="file" accept=".json" class="hidden" />
+
+    <script defer src="app.js"></script>
+  </body>
+</html>
