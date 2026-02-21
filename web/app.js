@@ -1,6 +1,6 @@
 (() => {
-  const ROOM_NAMES = ["Living Room", "Bedroom", "Kitchen", "Bathroom"];
-  const ROOM_ICONS = ["🛋️", "🛏️", "🍳", "🚿"];
+  const ROOM_NAMES = ["Bathroom", "Bedroom", "Living Room", "Kitchen"];
+  const ROOM_ICONS = ["🚿", "🛏️", "🛋️", "🍳"];
   const COLORS = {
     Red: "#FF6B6B",
     Yellow: "#FFD93D",

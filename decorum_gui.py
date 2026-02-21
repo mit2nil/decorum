@@ -16,8 +16,8 @@ import math
 
 # ============== GAME DATA ==============
 
-ROOM_NAMES = ["Living Room", "Bedroom", "Kitchen", "Bathroom"]
-ROOM_ICONS = ["🛋️", "🛏️", "🍳", "🚿"]
+ROOM_NAMES = ["Bathroom", "Bedroom", "Living Room", "Kitchen"]
+ROOM_ICONS = ["🚿", "🛏️", "🛋️", "🍳"]
 
 class Color(Enum):
     RED = ("Red", "#FF6B6B", "#FFE8E8", "#C0392B")
